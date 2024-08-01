@@ -1,0 +1,29 @@
+.bike-component{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.bike-card{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+     
+}
+
+.bike-card>img{
+    height: 400px;
+    width: 700px;
+}
+
+.color-btn{
+    border: 0.5px solid black;
+    width: 20px;
+   margin: 1px;
+   border-radius: 10px;
+}
+

@@ -1,0 +1,30 @@
+.footer-part{
+    min-height: 30vh;
+    background-color: var(--grey-color)  ;
+    color: var(--white-color);
+
+
+    font-family: 'poppins';
+}
+
+
+
+.footer-policy{
+    border-bottom: 1px solid white;
+    
+}
+
+.link-color{
+    color: aliceblue;
+}
+
+.icon-button{
+    background-color: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 7px;
+}
+.social-media-link{
+    font-size: 30px;
+}

@@ -1,0 +1,181 @@
+.feature-page {
+    padding: 0 35px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e3e6f0 100%);
+    position: relative; 
+  }
+  
+
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  /* Wrapper Styling */
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  /* Carousel Styling */
+  .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2) - 1px);
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 20px 0;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel.dragging {
+    scroll-behavior: auto;
+  }
+  
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging .card {
+    cursor: grabbing;
+    user-select: none;
+  }
+  
+  /* Arrow Icons Styling */
+  .arrow-icon {
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  
+  .arrow-icon:hover {
+    background-color: var(--primary-dark-color);
+  }
+  
+  .arrow-icon#left {
+    left:1px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .arrow-icon#right {
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Additional positioning for arrows */
+  .arrow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    size: 60%;
+    pointer-events: none; 
+  }
+  
+
+  
+  @media screen and (max-width: 900px) {
+    .carousel {
+      grid-auto-columns: 100%;
+      gap: 10px;
+
+    }
+
+  
+    .arrow-icon {
+      height: 50px;
+      width: 30px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .card {
+    padding: 20px;
+    height: 400px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .card {
+        width: 100%;
+        height: 600px; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        height: 600px; 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 100%;
+        height: 600px; 
+    }
+}

@@ -1,0 +1,33 @@
+:root {
+    --black-color: #131313;
+    --yellow-color: #ffc107;
+    --white-color: #F2F2F2;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--black-color);
+    z-index: 10;
+    
+}
+
+.nav-link {
+    color: var(--white-color);
+}
+
+.nav-link:hover {
+    color: var(--white-color); 
+    background-color: var(--yellow-color);
+    border-radius: 5px;
+}
+
+.navbar-font {
+    font-family: 'Poppins';
+    color: var(--white-color);
+    position: sticky;
+}
+
+.logoBW {
+    block-size: 50px;
+}

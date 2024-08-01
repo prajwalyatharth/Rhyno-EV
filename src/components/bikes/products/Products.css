@@ -1,0 +1,70 @@
+.Bike-component {
+    min-height: 60vh;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.product-card > h5 {
+    margin-bottom: 10px;
+}
+
+.product-card > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.buy-now {
+    width: 150px;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.Learn-more {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 900px) {
+    .Bike-component .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+    
+    .buy-now, .Learn-more {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-card {
+        padding: 10px;
+    }
+
+    .buy-now, .Learn-more {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}

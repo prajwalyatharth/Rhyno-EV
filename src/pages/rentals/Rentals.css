@@ -1,0 +1,28 @@
+.about-page {
+  padding: 20px;
+}
+
+.blog {
+  text-align: justify;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.social-media-link {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .icon-button {
+    font-size: 1.5rem;
+  }
+
+  .blog {
+    text-align: left;
+  }
+}
